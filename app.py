@@ -10,9 +10,10 @@ scaler_model_path = os.path.join(base_dir,"Scaler.pkl")
 gb_model_path = os.path.join(base_dir,"Gradientmodel.pkl")
 app = Flask(__name__)
 
-
-scaler_model = pickle.load(scaler_model_path)
-gb_model = pickle.load(gb_model_path)
+with open(scaler_model_path, 'rb') as scaler:
+    scaler_model = pickle.load(scaler)
+with open(gb_model_path, "rb") as gb:
+    gb_model = pickle.load(gb)
 
 @app.route('/')
 def index():
