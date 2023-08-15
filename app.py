@@ -11,9 +11,7 @@ with open("Scaler.pkl", 'rb') as scaler:
 
 with open("Gradientmodel.pkl", 'rb') as gb:
     gb_model = pickle.load(gb)
-
-
-
+app = Flask()
 @app.route('/')
 def index():
     content = {
