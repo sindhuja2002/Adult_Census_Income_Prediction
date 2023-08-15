@@ -4,8 +4,14 @@ from flask import Flask, request, render_template
 from predict import predict_salary
 from availables import *
 
-scaler_model = pickle.load(open("Scaler.pkl"))
-gb_model = pickle.load(open("Gradientmodel.pkl"))
+# Load the GradientBoostingRegressor model from the pickled file
+with open("Scaler.pkl", 'rb') as scaler:
+    scaler_model = pickle.load(scaler)
+
+
+with open("Gradientmodel.pkl", 'rb') as gb:
+    gb_model = pickle.load(gb)
+
 
 
 @app.route('/')
