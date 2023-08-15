@@ -3,17 +3,10 @@ import pickle
 from flask import Flask, request, render_template
 from predict import predict_salary
 from availables import *
-import os
 
-base_dir = os.path.abspath(os.path.dirname(__file__))
-scaler_model_path = os.path.join(base_dir,"Scaler.pkl")
-gb_model_path = os.path.join(base_dir,"Gradientmodel.pkl")
-app = Flask(__name__)
+scaler_model = pickle.load(open("Scaler.pkl", 'rb'))
+gb_model = pickle.load(open("Gradientmodel.pkl", 'rb'))
 
-with open(scaler_model_path, 'rb') as scaler:
-    scaler_model = pickle.load(scaler)
-with open(gb_model_path, "rb") as gb:
-    gb_model = pickle.load(gb)
 
 @app.route('/')
 def index():
