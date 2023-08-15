@@ -4,8 +4,8 @@ from flask import Flask, request, render_template
 from predict import predict_salary
 from availables import *
 
-scaler_model = pickle.load(open("Scaler.pkl", 'rb'))
-gb_model = pickle.load(open("Gradientmodel.pkl", 'rb'))
+scaler_model = pickle.load(open("Scaler.pkl"))
+gb_model = pickle.load(open("Gradientmodel.pkl"))
 
 
 @app.route('/')
