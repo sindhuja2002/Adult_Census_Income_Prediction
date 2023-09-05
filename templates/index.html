@@ -17,13 +17,19 @@
         body {
             overflow: hidden;
         }
+
+        .heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <div >
         <div class="row align-items-center bg-color" style="height: 100vh;">
             <div class="mx-auto col-10 col-md-8 col-lg-6">
-                <div class="row align-items-center">
+                <div class="heading">
                     <h1>ADULT CENSUS INCOME PREDICTION</h1>
                 </div>
                 <form action="/predict" method="post">
@@ -137,7 +143,9 @@
                             {% endfor %}
                         </select>
                     </div>
-                    <input class = "btn btn-primary button-color text-dark" type="submit" value="Predict Salary">
+                    <div class="heading">
+                        <input class = "btn btn-primary button-color text-dark" type="submit" value="Predict Salary">
+                    </div>
                 </form>
             </div>
         </div>
