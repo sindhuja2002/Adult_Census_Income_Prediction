@@ -16,4 +16,4 @@ python app.py
 
 To see the deployed site, go to:
 
-(https://adultcensusincomeprediction.onrender.com)[https://adultcensusincomeprediction.onrender.com]
+[adultcensusincomeprediction](https://adultcensusincomeprediction.onrender.com)
