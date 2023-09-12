@@ -1,6 +1,7 @@
 # Adult_Census_Income_Prediction
 ## Ineuron Internship
 
+The Adult Census Income Prediction project aims to predict whether an individual's income is above or below $50,000. It offers a user-friendly web interface hosted on Render, where users can input their information and get income predictions. This project combines machine learning and web development to provide an easy way to estimate income levels, whether you're online or using it on your own device.
 
 # Approach
 
