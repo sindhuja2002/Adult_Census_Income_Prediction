@@ -18,6 +18,12 @@ Link:[https://adultcensusincomeprediction.onrender.com](https://adultcensusincom
 
 # User Interface
 
+## Home page
+![homepage](https://github.com/sindhuja2002/Adult_Census_Income_Prediction/assets/67472777/3040ef3c-2193-4892-a780-d3852a7a279b)
+
+## Result page
+![resultpage](https://github.com/sindhuja2002/Adult_Census_Income_Prediction/assets/67472777/f266a143-7a3b-4f08-a5f4-2e4630182293)
+
 
 # Technologies Used
 1. Python
