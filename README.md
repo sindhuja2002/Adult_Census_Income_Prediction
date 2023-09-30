@@ -5,7 +5,7 @@ The Adult Census Income Prediction project aims to predict whether an individual
 
 # Approach
 
-The goal is to classify the data and predict whether the income is >= 50K or < 50K
+By using the Gradient Boosting classifier, it touched the most peak accuracy of 86, whereas the other attempted machine learning models such as Random Forest Classifier, Support vector Classifier and XgBoost doesn't give so and Used preprocessing technique in order to normalize the values by using standard scaler.
 
 # Webpage
 
